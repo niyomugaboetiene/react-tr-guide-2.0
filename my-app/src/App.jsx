@@ -1,10 +1,12 @@
-import One from "./1"
+// import One from "./1"
+import Register from "./pages/register"
 
 function App() {
 
   return (
     <>
-     <One></One>
+     {/* <One></One> */}
+     <Register />
     </>
   )
 }
