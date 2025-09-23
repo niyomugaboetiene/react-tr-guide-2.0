@@ -1,3 +1,5 @@
+import "./1.css";
+
 function One () {
     return (
         <div>
