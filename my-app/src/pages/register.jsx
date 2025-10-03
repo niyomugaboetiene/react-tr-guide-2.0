@@ -7,7 +7,7 @@ function Register() {
         <legend>Registration Form</legend>
 
         <label>First Name</label>
-        <input type="text" placeholder="First name" />
+        <input type="text" placeholder="First name" className="bg-blue-500"/>
 
         <label>Last Name</label>
         <input type="text" placeholder="Last name" />
