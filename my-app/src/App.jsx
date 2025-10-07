@@ -2,7 +2,7 @@
 import Register from "./pages/register"
 import COunter from "./pages/counter"
 // import Parent from "./pages/parent"
-import Parent from "./pages/parent1"
+import Parent2 from "./pages/parent2"
 function App() {
 
   return (
@@ -10,7 +10,8 @@ function App() {
      {/* <One></One> */}
      {/* <Register /> */}
      {/* <COunter/> */}
-     <Parent/>
+     {/* <Parent/> */}
+     <Parent2 />
     </>
   )
 }

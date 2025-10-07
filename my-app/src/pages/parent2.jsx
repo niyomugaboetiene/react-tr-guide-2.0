@@ -1,9 +1,9 @@
-import Child from "./child1"
+import Child from "./child2"
 
-function Parent() {
+function Parent2() {
      return(
          <Child name="Bob" schoolName="Gikonko Tss" marks={"50%"} />
     )
 }
 
-export default Parent
+export default Parent2

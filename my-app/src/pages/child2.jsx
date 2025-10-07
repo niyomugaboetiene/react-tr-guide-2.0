@@ -1,16 +1,17 @@
+import "./child2.css";
 function Child(props) {
    return(
     <div>
-        <table>
+        <table border={2} cellPadding={2} cellSpacing={4}>
             <tr>
                 <th>Student Name</th>
                 <th>School Name</th>
                 <th>Marks</th>
             </tr>
             <tr>
-                <table>{props.name}</table>
-                <table>{props.schoolName}</table>
-                <table>{props.marks}</table>
+                <td>{props.name}</td>
+                <td>{props.schoolName}</td>
+                <td>{props.marks}</td>
             </tr>
         </table>
     </div>
