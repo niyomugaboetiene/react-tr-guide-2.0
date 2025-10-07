@@ -1,14 +1,16 @@
-function Product(props) {
+function ProductList(props) {
     const productName = [props.name1, props.name2, props.name3];
     return (
         <div>
-            <ul>
-                {productName.map((idx, name) => {
-                   <li key={idx}>{name}</li>
-                })}
-            </ul>
+                {productName.map((idx, name) => (
+                   <ul key={idx}>
+                      <li>{name.name1}</li>
+                      <li>{name.name2}</li>
+                      <li>{name.name3}</li>
+                   </ul>
+                ))}
         </div>
     )
 }
 
-export default Product;
+export default ProductList;

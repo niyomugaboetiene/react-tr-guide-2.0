@@ -1,10 +1,10 @@
-import Product from "./child4";
-function ProductList() {
+import ProductList from "./child4";
+function Product() {
    return (
     <div>
-        <Product name1="Fruits" name2="Biscuits" name3="Tea"/>
+        <ProductList name1="Fruits" name2="Biscuits" name3="Tea"/>
     </div>
    )
 }
 
-export default ProductList;
+export default Product;
