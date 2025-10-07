@@ -5,3 +5,5 @@ function Child3(props) {
         </div>
     )
 }
+
+export default Child3;
