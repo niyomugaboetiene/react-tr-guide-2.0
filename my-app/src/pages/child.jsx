@@ -1,11 +1,11 @@
 function Child(props) {
     return (
-        <div>
-            <p>Student Name: {props.name}</p>
-            <p>Student email: {props.email}</p>
-            <p>Student age: {props.age}</p>
-            <p>Student address: {props.address}</p>
-            <p>Student course: {props.course}</p>
+        <div className="parent">
+            <p>Student Name: <span>{props.name}</span></p>
+            <p>Student email: <span>{props.email}</span></p>
+            <p>Student age: <span>{props.age}</span></p>
+            <p>Student address: <span>{props.address}</span></p>
+            <p>Student course: <span>{props.course}</span></p>
         </div>
     )
 }
