@@ -11,7 +11,7 @@ function App() {
     <>
      {/* <One></One> */}
      {/* <Register /> */}
-     <COunter/>
+     {/* <COunter/> */}
      {/* <Parent/> */}
      {/* <Parent2 /> */}
      {/* <Parent3 /> */}
