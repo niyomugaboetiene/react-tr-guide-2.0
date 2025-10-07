@@ -1,4 +1,4 @@
-import "./child.css"
+import "./styling.css"
 function Child(props) {
     return (
         <div className="parent">
