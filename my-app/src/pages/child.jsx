@@ -1,3 +1,4 @@
+import "./child.css"
 function Child(props) {
     return (
         <div className="parent">
