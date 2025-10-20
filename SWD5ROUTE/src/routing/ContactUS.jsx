@@ -1,9 +1,9 @@
-const About = () => {
+const Contact = () => {
     return (
         <div>
-            <p>This is About page</p>
+            <p>This is contact page</p>
         </div>
     )
 }
 
-export default About
+export default Contact
