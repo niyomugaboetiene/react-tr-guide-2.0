@@ -1,4 +1,4 @@
-import Child from "./child1"
+import Child from "../child1"
 
 function Parent() {
     return (
