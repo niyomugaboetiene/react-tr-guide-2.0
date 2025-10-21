@@ -10,7 +10,7 @@ import Main from "./routing/project/Main"
 function App() {
 
   return (
-    <div>
+    <div className="min-h-screen bg-gradient-to-br from-blue-300 to-green-300 via-violet-300">
     <BrowserRouter>
      <Main />
       <Routes>
@@ -18,8 +18,8 @@ function App() {
         <Route path="/about" element={<About />}/>
         <Route path="/contact" element={<Contact />}/>   */}
 
-              <Route path="/" element={<HomePage />}/>
-              <Route path="/about" element={<AboutPage />}/>
+              <Route path="/home" element={<HomePage />}/>
+              <Route path="/aboutUs" element={<AboutPage />}/>
               <Route path="/service" element={<Service />}/>
       </Routes>
     </BrowserRouter>
