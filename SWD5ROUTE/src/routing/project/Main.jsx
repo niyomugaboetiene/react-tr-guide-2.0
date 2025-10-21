@@ -20,7 +20,7 @@ const Main = () => {
            </Routes>
         </BrowserRouter>
         </div>
-
-
     )
 }
+
+export default Main
