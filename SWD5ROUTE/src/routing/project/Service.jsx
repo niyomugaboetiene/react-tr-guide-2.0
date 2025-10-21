@@ -2,9 +2,9 @@ import React from "react";
 
 const Service = () => {
   return (
-    <div>
-        <p>This is Service page</p>
-        <p>The page which contain our service to our customers</p>
+    <div className="mt-10 ms-3">
+        <p className="font-light text-2xl mb-2"> This is Service page</p>
+        <p className="font-light text-2xl">The page which contain our service to our customers</p>
     </div>
   )
 }
