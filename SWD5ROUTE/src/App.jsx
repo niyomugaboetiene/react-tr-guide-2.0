@@ -1,7 +1,7 @@
 // import Home from "./routing/Home"
 // import Contact from "./routing/ContactUS"
 // import About from "./routing/About"
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 import HomePage from "./routing/project/Home"
 import AboutPage from "./routing/project/About"
 import Service from "./routing/project/Service"
@@ -11,19 +11,19 @@ function App() {
 
   return (
     <div>
-    <Router>
+    <BrowserRouter>
+     <Main />
       <Routes>
         {/* <Route path="/" element={<Home />}/>
         <Route path="/about" element={<About />}/>
         <Route path="/contact" element={<Contact />}/>   */}
 
-              <Route path="/" Component={<HomePage />}/>
-              <Route path="/about" Component={<AboutPage />}/>
-              <Route path="/service" Component={<Service />}/>
+              <Route path="/" element={<HomePage />}/>
+              <Route path="/about" element={<AboutPage />}/>
+              <Route path="/service" element={<Service />}/>
       </Routes>
-    </Router>
+    </BrowserRouter>
 
-    <Main />
     </div>
 
   
