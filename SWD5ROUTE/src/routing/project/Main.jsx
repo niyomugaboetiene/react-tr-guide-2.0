@@ -11,6 +11,14 @@ const Main = () => {
             <Link to="/about">About</Link>
             <Link to="/service">Service</Link>
         </nav>
+
+        <BrowserRouter>
+           <Routes>
+              <Route path="/" Component={<Home />}/>
+              <Route path="/about" Component={<About />}/>
+              <Route path="/service" Component={<Service />}/>
+           </Routes>
+        </BrowserRouter>
         </div>
 
 
