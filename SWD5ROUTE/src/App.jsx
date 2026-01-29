@@ -12,18 +12,18 @@ function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-300 to-green-300 via-violet-300">
     <BrowserRouter>
-     <Main />
+     {/* <Main /> */}
       <Routes>
         {/* <Route path="/" element={<Home />}/>
         <Route path="/about" element={<About />}/>
         <Route path="/contact" element={<Contact />}/>   */}
 
-              <Route path="/home" element={<HomePage />}/>
+              {/* <Route path="/home" element={<HomePage />}/>
               <Route path="/aboutUs" element={<AboutPage />}/>
-              <Route path="/service" element={<Service />}/>
+              <Route path="/service" element={<Service />}/> */}
+           
       </Routes>
     </BrowserRouter>
-
     </div>
 
   
