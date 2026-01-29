@@ -3,7 +3,8 @@
 // import MouseTrigger from "./Exercises part 1/6"
 // import ShowAndHide from "./Exercises part 1/7"
 // import LoginFOrm from "./Exercises part 1/8"
-import Select from "./Exercises part 1/9"
+// import Select from "./Exercises part 1/9"
+import KeyPressed from "./Exercises part 1/10"
 function App() {
 
   return (
@@ -13,7 +14,8 @@ function App() {
          {/* <MouseTrigger /> */}
          {/* <ShowAndHide /> */}
          {/* <LoginFOrm /> */}
-         <Select />
+         {/* <Select /> */}
+         <KeyPressed />
    </div>
   )
 }
