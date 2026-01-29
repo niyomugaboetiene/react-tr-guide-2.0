@@ -8,6 +8,8 @@ const Form = () => {
 
     function Submit(e) {
        e.preventDefault();
+        
+       if (!username || !password) return;
        setMessage(`Hello ${username} you submitted successfully`);
        setShowMessage(true);
        console.log('Username:', username)
@@ -16,12 +18,12 @@ const Form = () => {
 
     return (
         <div>
-             <div>
-                <input type="text" onChange={(e) => setUsername(e.target.value)} required/> <br />
-                <input type="password" onChange={(e) => setPassword(e.target.value)} required/> <br />
+             <form onSubmit={Submit}>
+                <input type="text" onChange={(e) => setUsername(e.target.value)}/> <br />
+                <input type="password" onChange={(e) => setPassword(e.target.value)}/> <br />
 
-                <button onClick={Submit}>Submit</button>
-             </div>
+                <button>Submit</button>
+             </form>
 
              {showMessage && (
                  <>
