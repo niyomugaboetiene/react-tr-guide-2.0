@@ -5,6 +5,7 @@ const MouseTrigger = () => {
 
     return (
         <div>
+              <h1>Hover to see magic</h1>
                 <div   onMouseEnter={() => setIsMOuseEntered(true)} onMouseLeave={() => setIsMOuseEntered(false)}>
                   <p>{isMOuseEntered ? 'Mouse inside' : 'Mouse outside'}</p>
                 </div>
