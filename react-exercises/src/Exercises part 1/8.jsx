@@ -1,40 +1,54 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 
-function LoginFOrm () {
-    const [username, setUsername] = useState("")
-    const [password, setPassword] = useState("")
-    const [message, setMessage] = useState("");
+function LoginForm() {
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [message, setMessage] = useState("");
 
-    function handleSubmit() {
-       if (!username) {
-          setMessage("Username is required")
-       }
-    
-        if (!password) {
-            setMessage("Password is required")
-        }  
-    
-        setMessage("Login successfully");
+  function handleSubmit(e) {
+    e.preventDefault(); 
 
+    if (!username && !password) {
+        setMessage("Both username and password required");
+        return;
     }
 
-    return (
-        <div>
-            <form  onSubmit={handleSubmit}>
-                <label htmlFor="">Usename</label> <br />
-                <input type="text"  onClick={(e) => setUsername(e.target.values)} />
+    if (!username) {
+      setMessage("Username is required");
+      return;
+    }
 
-                <label htmlFor="">Password</label> <br />
-                <input type="text"  onClick={(e) => setPassword(e.target.values)} />
+    if (!password) {
+      setMessage("Password is required");
+      return;
+    }
 
-                <button>Submit</button>
+    setMessage("Login successfully");
+  }
 
-                {message && (
-                    <p>{message}</p>
-                )}
-            </form>
-        </div>
-    )
+  return (
+    <div>
+      <form onSubmit={handleSubmit}>
+        <label>Username</label> <br />
+        <input
+          type="text"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+        /> <br />
+
+        <label>Password</label> <br />
+        <input
+          type="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        /> <br />
+
+        <button type="submit">Submit</button>
+
+        {message && <p>{message}</p>}
+      </form>
+    </div>
+  );
 }
 
-export default LoginFOrm
+export default LoginForm;
