@@ -21,7 +21,9 @@ const Form = () => {
              <form onSubmit={Submit} className="bg-amber-200 p-3 rounded-lg shadow-xl">
                 <div className="mt-2 mb-2 w-100">
                     <label className="block text-lg text-amber-800">Username</label>
-                    <input type="text" onChange={(e) => setUsername(e.target.value)}/> <br />
+                    <input type="text" 
+                         className="border w-full py-1 rounded-lg border-amber-500"
+                         onChange={(e) => setUsername(e.target.value)}/> <br />
                 </div>
                 <div className="mt-2 mb-4">
                      <label className="block text-lg text-amber-800">Password</label>
