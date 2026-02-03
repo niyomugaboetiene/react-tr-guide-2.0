@@ -17,22 +17,23 @@ const Form = () => {
     }
 
     return (
-        <div className="min-h-screen flex justify-center items-center bg-amber-100">
-             <form onSubmit={Submit} className="bg-amber-200 p-3 rounded-lg shadow-xl">
+        <div className="min-h-screen flex justify-center items-center bg-blue-100">
+             <form onSubmit={Submit} className="bg-blue-200 p-3 rounded-lg shadow-xl">
+                <h2 className="text-center text-xl mb-3 text-blue-800">Input Fields</h2>
                 <div className="mt-2 mb-2 w-100">
-                    <label className="block text-lg text-amber-800">Username</label>
+                    <label className="block text-lg text-blue-800">Username</label>
                     <input type="text" 
-                         className="border w-full py-1 rounded-lg border-amber-500"
+                         className="border w-full py-1 rounded-lg border-blue-500"
                          onChange={(e) => setUsername(e.target.value)}/> <br />
                 </div>
                 <div className="mt-2 mb-4">
-                     <label className="block text-lg text-amber-800">Password</label>
+                     <label className="block text-lg text-blue-800">Password</label>
                      <input type="password" onChange={(e) => setPassword(e.target.value)} 
-                        className="border w-full py-1 rounded-lg border-amber-500"
+                        className="border w-full py-1 rounded-lg border-blue-500"
                      /> 
                 </div>
 
-                <button>Submit</button>
+                <button className="bg-blue-400 w-full py-1 text-white rounded-lg hover:bg-blue-500 transition-colors mb-3">Submit</button>
              </form>
 
              {showMessage && (
