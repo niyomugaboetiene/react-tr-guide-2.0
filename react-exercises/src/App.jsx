@@ -5,7 +5,7 @@
 // import LoginFOrm from "./Exercises part 1/8"
 // import Select from "./Exercises part 1/9"
 // import KeyPressed from "./Exercises part 1/10"
-import Input from "./Exercises part 1/3"
+// import Input from "./Exercises part 1/3"
 import Counter from "./Exercises part 1/2"
 import Button from "./Exercises part 1/1"
 function App() {
@@ -19,7 +19,8 @@ function App() {
          {/* <LoginFOrm /> */}
          {/* <Select /> */}
          {/* <KeyPressed /> */}
-         <Input />
+         {/* <Input /> */}
+         <Counter />
    </div>
   )
 }
